@@ -5,26 +5,6 @@ import { useHistory } from "react-router-dom";
 export const Main = (props) => {
   const { userDetail } = props;
   const history = useHistory();
-  
-  const getDate = () => {
-    if (userDetail.created_at !== undefined) {
-      let date = userDetail.created_at;
-      date = date.substring(0, 10);
-      let day = date.substring(8, 10);
-      let year = date.substring(0, 4);
-      let month = date.substring(5, 7);
-      date = day + "-" + month + "-" + year;
-      return date;
-    }
-  };
-
-  const getWebsite = () => {
-    if (userDetail.blog !== undefined) {
-      let website = userDetail.blog;
-      website = website.substring(8);
-      return website;
-    }
-  };
 
   const back = () => {
     history.goBack();
@@ -71,11 +51,11 @@ export const Main = (props) => {
             </div>
             <div className="right-div2">
               <label>Joined Date</label>
-              <p>{}</p>
+              <p>{userDetail.created_at}</p>
             </div>
             <div className="right-div3">
               <label>Website</label>
-              <p>{}</p>
+              <p>{userDetail.blog}</p>
             </div>
           </section>
           <section className="right-section">
