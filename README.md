@@ -1,3 +1,46 @@
+This is a simple Resume Generator application made using React.
+
+API Used: https://api.github.com/users/username
+
+Features:
+1) Error Handeling
+2) Hire button hide on if hireable is null.
+3) Display Resume based on the username
+
+
+Output:
+1)Home
+![Landing Page Image](./Home.png)
+
+2)Resume
+![Resume Image](./Resume.png)
+
+3)Error Handel
+![Error Image](./Error.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
