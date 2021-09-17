@@ -1,11 +1,10 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { getUserDetails } from "./api-service";
 
 const useUserDetail = (username) => {
   const [loading, setLoading] = useState(false);
   const [userDetail, setUserDetail] = useState([]);
   const [error, setError] = useState(null);
-  
 
   useEffect(() => {
     const fetchUserDetail = async () => {
@@ -23,7 +22,7 @@ const useUserDetail = (username) => {
     fetchUserDetail();
   }, []);
 
-  return { loading, userDetail, error};
+  return { loading, userDetail, error };
 };
 
 export default useUserDetail;
