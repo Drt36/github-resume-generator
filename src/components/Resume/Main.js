@@ -16,7 +16,11 @@ export const Main = (props) => {
         <button className="back-arrow" onClick={back}>
           <img src={arrow} />
         </button>
-        <button className="hire-btn">Hire Me</button>
+        {userDetail.hireable === null ? (
+          <button className="hire-btn">Hire Me</button>
+        ) : (
+          " "
+        )}
       </section>
       <section className="bottom-section">
         <img src={userDetail.avatar_url} />
@@ -33,27 +37,33 @@ export const Main = (props) => {
         <section className="bottom-section__bottom">
           <section className="left-section">
             <div className="left-div1">
+              <i class="far fa-envelope"></i>
               <label>Email</label>
               <p>{userDetail.email}</p>
             </div>
+
             <div className="left-div2">
-              <label>Location</label>
+              <i class="fas fa-map-marker-alt"></i> <label>Location</label>
               <p>{userDetail.location}</p>
             </div>
+
             <div className="left-div3">
-              <label>Twitter</label>
+              <i class="fab fa-twitter"></i> <label>Twitter</label>
               <p>{userDetail.twitter_username}</p>
             </div>
 
             <div className="right-div1">
+              <i class="fas fa-building"></i>
               <label>Organization</label>
               <p>{userDetail.company}</p>
             </div>
             <div className="right-div2">
+              <i class="fas fa-calendar-day"></i>
               <label>Joined Date</label>
               <p>{userDetail.created_at}</p>
             </div>
             <div className="right-div3">
+              <i class="fas fa-globe"></i>
               <label>Website</label>
               <p>{userDetail.blog}</p>
             </div>

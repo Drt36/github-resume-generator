@@ -153,8 +153,8 @@
     grid-area: leftdiv2;
 }
 
-.left-section #left-div2 {
-    grid-area: leftdiv1;
+.left-section #left-div3 {
+    grid-area: leftdiv3;
 }
 
 .left-section #right-div1 {
@@ -180,7 +180,7 @@
     border: 3px solid #EBEBEB;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "leftdiv1  rightdiv1" "leftdiv2    rightdiv2" "leftdiv3   rightdiv13";
+    grid-template-areas: "leftdiv1  rightdiv1 " "leftdiv2   rightdiv2" "leftdiv3  rightdiv13";
 }
 
 .left-section div p {
@@ -193,6 +193,7 @@
 .left-section div label {
     font-size: 1rem;
     color: #585757;
+    margin-left: 0.5vw;
     font-family: var(--text-font-family);
 }
 
